@@ -2,179 +2,82 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Homepage direction prototype for Alfie's product design portfolio.">
-  <title>Alfie — Product Designer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"><link rel="icon" type="image/svg+xml" href="./favicon.svg?v=alfie-text"><link rel="alternate icon" href="./favicon.ico?v=alfie-text"><link rel="apple-touch-icon" href="./apple-touch-icon.png?v=alfie-text">
+  <meta name="description" content="Alfie Liu is a product designer with experience in digital banking and AI, helping people understand complex data and workflows.">
+  <title>Alfie Liu — Product Designer</title>
   <link rel="preload" href="./assets/fonts/AspektaVF.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="./styles.css">
-  <script defer src="./app.js"></script>
+  <link rel="stylesheet" href="./styles.css?v=20261011-hero-glass3">
+  <script defer src="./app.js?v=20261011-hero-cycle2"></script>
 </head>
-<body>
+<body data-page="home">
   <a class="skip-link" href="#work">Skip to selected work</a>
-  <div class="prototype-note" role="note">
-    <span>Homepage prototype v0.1</span>
-    <span>Fictional content & anonymized interfaces</span>
-  </div>
-
   <header class="site-header" id="top">
-    <a class="brand" href="#top" aria-label="Alfie, back to top">alfie<span>.</span></a>
-    <div class="header-meta">
-      <span>Product designer</span>
-      <span>Vancouver, BC</span>
-    </div>
+    <a class="brand" href="#top" aria-label="Alfie Liu, back to top">Alfie Liu</a>
   </header>
-
   <main>
-    <section class="hero" aria-labelledby="hero-title">
+    <section class="hero hero--portrait" aria-labelledby="hero-title" data-hero-motion>
       <div class="hero-glow" aria-hidden="true"></div>
       <div class="hero-copy">
-        <p class="eyebrow"><span class="spark">✳</span> Hi, I’m Alfie.</p>
-        <h1 id="hero-title">Making complex<br>products feel <span class="highlight">clear.</span></h1>
-        <p class="hero-intro">I’m a product designer turning complex data and workflows into clear, usable experiences—with a background in digital banking and AI-powered products.</p>
+        <p class="eyebrow"><span class="hero-status-dot" aria-hidden="true"></span> Product Designer</p>
+        <h1 id="hero-title" aria-label="Making complex products easier to use">
+          <span class="hero-title-visual" aria-hidden="true">
+            <span class="hero-title-line hero-title-line--subject">
+              <span class="hero-making t-stream-w is-in">Making</span>
+              <span class="hero-word-slot" data-hero-word-slot>
+                <span class="hero-word-measure">AI-powered</span>
+                <span class="hero-word t-stream-w is-in is-active" data-hero-word="complex">complex</span>
+                <span class="hero-word" data-hero-word="financial">financial</span>
+                <span class="hero-word" data-hero-word="AI-powered">AI-powered</span>
+              </span>
+              <span class="hero-products t-stream-w is-in">products</span>
+            </span>
+            <span class="hero-title-line hero-clear"><span class="hero-highlight" aria-hidden="true"></span><span class="t-stream-w is-in">easier</span> <span class="t-stream-w is-in">to</span> <span class="t-stream-w is-in">use</span></span>
+          </span>
+        </h1>
+        <p class="hero-intro" data-hero-stream>I work across digital banking and AI, helping people understand complex data and workflows.</p>
         <a class="text-link" href="#work">Explore selected work <span>↓</span></a>
       </div>
-
       <div class="identity-object" aria-hidden="true">
-        <div class="glass-card">
-          <span class="glass-label">A LITTLE WONDER</span>
-          <span class="glass-mark">a<sup>＊</sup></span>
-          <span class="glass-copy">A clear mind.<br>A curious eye.</span>
-        </div>
+        <div class="glass-card"><span class="glass-label">A LITTLE WONDER</span><img class="hero-portrait" src="./assets/images/alfie/alfie-portrait.svg" alt="" width="1010" height="1050" decoding="async" fetchpriority="high"><span class="glass-copy">A clear mind<br>A curious eye</span></div>
         <span class="orbit-mark">✳</span>
       </div>
     </section>
-
     <section class="work" id="work" aria-labelledby="work-title">
-      <header class="section-heading reveal">
-        <p class="section-index">01 / SELECTED WORK</p>
-        <h2 id="work-title">Complex challenges.<br><em>Clear experiences.</em></h2>
-      </header>
-
-      <article class="project project-feature project-ai reveal">
-        <div class="project-visual" aria-label="Anonymized conversational spending analysis interface">
-          <span class="visual-note">ANONYMIZED UI · SAMPLE DATA</span>
-          <div class="phone-shell">
-            <div class="phone-top"><span>9:41</span><span>•••</span></div>
-            <div class="assistant-title"><i>✦</i> AI spending assistant</div>
-            <div class="chat-bubble user">How has my spending changed this month?</div>
-            <div class="chat-bubble system">Your everyday spending is trending differently across three categories.</div>
-            <div class="insight-card">
-              <span>This month</span>
-              <strong>Spending overview</strong>
-              <div class="donut" aria-hidden="true"></div>
-              <div class="legend"><i></i><i></i><i></i><i></i></div>
-            </div>
-            <div class="prompt-bar">Ask a follow-up question <b>↗</b></div>
-          </div>
-          <div class="floating-insight insight-a"><span>FOLLOW-UP</span><strong>Compare by category</strong></div>
-          <div class="floating-insight insight-b"><span>FEEDBACK</span><strong>Was this useful?</strong></div>
-        </div>
+      <header class="section-heading reveal"><h2 class="section-index" id="work-title">Selected Work</h2></header>
+      <a class="project project-feature project-editorial reveal" href="./genai-spending/">
+        <div id="genai-00-hero-response" class="project-media ratio-landscape"><img src="./assets/images/genai-spending/genai-00-hero-response.png" alt="Conversational spending analysis shown on a mobile banking interface with supporting financial charts." width="2048" height="1536" loading="eager" decoding="async"></div>
         <div class="project-copy">
           <div class="tags"><span>AI-powered finance</span><span>Conversational UX</span><span>Mobile</span></div>
-          <h3>Helping customers understand spending through conversation.</h3>
-          <p>I designed a conversational credit card analysis concept that turns natural-language questions into personalized insights and clear data visualizations.</p>
-          <dl class="project-facts">
-            <div><dt>Role</dt><dd>Product designer</dd></div>
-            <div><dt>Status</dt><dd>Prototype placeholder</dd></div>
-          </dl>
-          <div class="highlights" aria-label="Placeholder highlights">
-            <div><strong>XX%</strong><span>sample outcome</span></div>
-            <div><strong>0→1</strong><span>concept exploration</span></div>
-          </div>
-          <button class="case-link" type="button" data-prototype-action>View case study <span>↗</span></button>
+          <h3>Finding spending with AI</h3>
+          <p>Cardholders ask about spending and get answers through summaries, charts, and transaction details.</p>
+          <div class="highlights highlights-single" aria-label="Usability test result"><div><strong>62%</strong><span>Less time to complete a transaction-search task in a usability test</span></div></div>
+          <span class="case-link">View case study <b>↗</b></span>
         </div>
-      </article>
-
-      <article class="project project-feature project-museum reveal">
-        <div class="project-visual" aria-label="Fictional mobile-guided museum experience interface">
-          <span class="visual-note">PLACEHOLDER EXPERIENCE</span>
-          <div class="museum-ticket ticket-one"><span>01</span><strong>Enter the archive</strong><small>Discover a hidden clue</small></div>
-          <div class="museum-device">
-            <span class="device-status">FIELD GUIDE · 02</span>
-            <div class="radar"><i></i><i></i><i></i></div>
-            <strong>Trace the story.</strong>
-            <p>Move through the space to uncover the next chapter.</p>
-            <span class="device-button">Continue exploration</span>
-          </div>
-          <div class="museum-ticket ticket-two"><span>03</span><strong>Connect the pieces</strong><small>Team interaction</small></div>
-        </div>
+      </a>
+      <a class="project project-feature project-editorial reveal" href="./financial-adventure/">
+        <div id="financial-home-cover" class="project-media project-tone-butter"><img src="./assets/images/financial-adventure/65b0e641d31e1e2f7409f55b_Cover%201-p-1600.png" alt="Financial Adventure and Financial Explorer 62 project cover" width="1920" height="1080" loading="lazy" decoding="async"></div>
         <div class="project-copy">
-          <div class="tags"><span>Immersive experience</span><span>Research</span><span>Mobile guide</span></div>
-          <h3>Turning financial learning into an interactive adventure.</h3>
-          <p>I shaped a mobile-guided museum journey that helped younger audiences explore complex financial topics through storytelling and collaborative play.</p>
-          <dl class="project-facts">
-            <div><dt>Role</dt><dd>Product designer</dd></div>
-            <div><dt>Context</dt><dd>Live museum experience</dd></div>
-          </dl>
-          <div class="highlights">
-            <div><strong>4K+</strong><span>placeholder visitors</span></div>
-            <div><strong>9.4</strong><span>placeholder rating</span></div>
-          </div>
-          <button class="case-link" type="button" data-prototype-action>View case study <span>↗</span></button>
+          <div class="tags"><span>Immersive experience</span><span>User research</span><span>Mobile guide</span></div>
+          <h3>Financial Adventure</h3>
+          <p>A mobile-guided museum experience where younger visitors explore financial concepts through puzzles, storytelling, and team activities.</p>
+          <div class="highlights"><div><strong>5</strong><span>experience stages</span></div><div><strong>58</strong><span>interface screens</span></div></div>
+          <span class="case-link">View case study <b>↗</b></span>
         </div>
-      </article>
-
+      </a>
       <div class="secondary-grid">
-        <article class="project-small project-prompts reveal">
-          <div class="small-visual">
-            <span class="visual-note">SIDE PROJECT · SAMPLE UI</span>
-            <div class="library-window">
-              <div class="library-nav"><b>Prompt library</b><span>⌘ K</span></div>
-              <div class="library-body">
-                <span class="library-filter">Research</span><span class="library-filter">Writing</span><span class="library-filter">Analysis</span>
-                <div class="prompt-card"><small>DISCOVERY</small><strong>Turn notes into themes</strong><span>Use prompt ↗</span></div>
-                <div class="prompt-card muted"><small>WORKFLOW</small><strong>Draft a project brief</strong><span>Use prompt ↗</span></div>
-              </div>
-            </div>
-          </div>
-          <div class="small-copy">
-            <div class="tags"><span>AI adoption</span><span>Side project</span></div>
-            <h3>Helping teams start with a better prompt.</h3>
-            <p>A lightweight internal library created to reduce the friction of adopting generative AI at work.</p>
-            <button class="small-link" type="button" data-prototype-action>View experiment ↗</button>
-          </div>
-        </article>
-
-        <article class="project-small project-exhibits reveal">
-          <div class="small-visual exhibits-stage">
-            <span class="visual-note">TWO PROJECTS · SAMPLE VISUAL</span>
-            <div class="exhibit-panel panel-a"><span>CUBE N</span><div class="tile-field" aria-hidden="true"></div></div>
-            <div class="exhibit-panel panel-b"><span>MOTOR</span><div class="motor-rings" aria-hidden="true"></div></div>
-          </div>
-          <div class="small-copy">
-            <div class="tags"><span>Spatial interaction</span><span>Exhibits</span></div>
-            <h3>Connecting digital interfaces with physical space.</h3>
-            <p>Two selected installations exploring gesture, responsive content, and tangible learning experiences.</p>
-            <button class="small-link" type="button" data-prototype-action>Explore selected exhibits ↗</button>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <section class="about-teaser reveal" id="about" aria-labelledby="about-title">
-      <p class="section-index">02 / OPTIONAL ABOUT TEASER</p>
-      <div>
-        <h2 id="about-title">Different mediums.<br>One recurring interest.</h2>
-        <p>From interactive exhibitions to digital banking and AI products, I’m interested in how design helps people understand and engage with complexity.</p>
-        <button class="case-link light" type="button" data-prototype-action>More about me <span>↗</span></button>
+        <a class="project-small project-editorial reveal" href="./prompt-library/">
+          <div id="prompt-library-home-cover" class="project-media project-tone-peach ratio-card"><img src="./assets/images/prompt-library/prompt-library-cover.png?v=20261006-1" alt="Blue abstract browser windows surrounding the UED Prompt Library title" width="2958" height="1638" loading="lazy" decoding="async"></div>
+          <div class="small-copy"><div class="tags"><span>AI tooling</span><span>Side project</span></div><h3>A prompt library for the team</h3><p>A browser extension I designed and built to help designers find, customize, and reuse AI prompt templates.</p><span class="small-link">View case study ↗</span></div>
+        </a>
+        <a class="project-small project-editorial reveal" href="./interactive-exhibits/">
+          <div id="exhibits-home-cover" class="project-media project-tone-sage ratio-card"><img src="./assets/images/interactive-exhibits/648d6758c6651cb037d6867e_Comp%201%20(0-00-19-07).png" alt="Exploration of Motor: a visitor uses the transparent touchscreen." loading="lazy" decoding="async"></div>
+          <div class="small-copy"><div class="tags"><span>Interaction design</span><span>Exhibits</span></div><h3>Interfaces for exploring physical exhibits</h3><p>A generative interactive wall and a transparent screen that lets visitors explore a motor model through touch and gesture.</p><span class="small-link">View case study ↗</span></div>
+        </a>
       </div>
     </section>
   </main>
+  <footer class="site-footer"><div class="footer-primary"><div class="footer-identity"><strong>Alfie Liu</strong><div class="footer-meta"><span>Product Designer · Vancouver © 2026</span><a href="./llms.txt" target="_blank" rel="noopener">A little note for AI</a></div></div><nav class="footer-links" aria-label="Footer links"><a href="./assets/documents/Alfie-Liu-CV.pdf" target="_blank" rel="noopener" aria-label="Resume PDF (opens in a new tab)">Resume</a><a href="https://www.linkedin.com/in/alfiekengliu" target="_blank" rel="noreferrer">LinkedIn</a><a href="mailto:alfie.kengliu@gmail.com">alfie.kengliu@gmail.com</a></nav></div></footer>
+  <nav class="dock" aria-label="Primary navigation"><a class="dock-item active" href="#work">Work</a><a class="dock-item" href="./about/">About</a><a class="dock-item" href="./assets/documents/Alfie-Liu-CV.pdf" target="_blank" rel="noopener" aria-label="Resume PDF (opens in a new tab)">Resume</a></nav>
 
-  <footer class="site-footer">
-    <p>Have a complex problem worth making clear?</p>
-    <a href="mailto:hello@example.com">Let’s talk <span>↗</span></a>
-    <div><span>Prototype contact</span><span>Vancouver, BC · 2026</span></div>
-  </footer>
-
-  <nav class="dock" aria-label="Primary navigation">
-    <span class="dock-slider" aria-hidden="true"></span>
-    <a class="dock-item active" href="#work" data-dock="work">Work</a>
-    <a class="dock-item" href="#about" data-dock="about">About</a>
-    <button class="dock-item" type="button" data-resume>Resume</button>
-    <a class="dock-brand" href="#top" aria-label="Back to top">a<span>·</span></a>
-  </nav>
-
-  <div class="toast" role="status" aria-live="polite"></div>
 </body>
 </html>

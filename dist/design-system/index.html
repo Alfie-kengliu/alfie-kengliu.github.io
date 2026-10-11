@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><link rel="icon" type="image/svg+xml" href="../favicon.svg?v=alfie-text"><link rel="alternate icon" href="../favicon.ico?v=alfie-text"><link rel="apple-touch-icon" href="../apple-touch-icon.png?v=alfie-text">
+  <meta name="description" content="Internal design system for Alfie Liu's portfolio.">
+  <title>Design System v0.1 — Alfie Portfolio</title>
+  <link rel="preload" href="../assets/fonts/AspektaVF.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="../styles.css?v=20261011-hero-glass3">
+  <link rel="stylesheet" href="./design-system.css?v=20261011-glass-progress2">
+  <script defer src="../app.js?v=20261011-hero-cycle2"></script>
+</head>
+<body class="ds-page">
+  <a class="skip-link" href="#foundations">Skip to foundations</a>
+  <header class="ds-topbar">
+    <a class="brand" href="../" aria-label="Alfie Liu, home">Alfie Liu</a>
+    <div class="ds-title"><strong>Portfolio Design System</strong><span>v0.1 · Internal working source</span></div>
+    <a class="ds-back" href="../">View portfolio ↗</a>
+  </header>
+
+  <div class="ds-layout">
+    <aside class="ds-sidebar" aria-label="Design system sections">
+      <p>Contents</p>
+      <a href="#principles">Principles</a>
+      <a href="#foundations">Foundations</a>
+      <a href="#typography">Typography</a>
+      <a href="#shape-motion">Shape &amp; motion</a>
+      <a href="#home-hero">Home Hero</a>
+      <a href="#actions">Actions</a>
+      <a href="#navigation">Navigation</a>
+      <a href="#about-gallery">About gallery</a>
+      <a href="#cards">Project cards</a>
+      <a href="#content">Case content</a>
+      <a href="#governance">Usage rules</a>
+    </aside>
+
+    <main class="ds-main">
+      <section class="ds-intro">
+        <p class="ds-eyebrow">DESIGN SYSTEM / 00</p>
+        <h1>One shared language for design and development</h1>
+        <p>This page documents the visual foundations and reusable UI already used across the portfolio. Changes should be tested here first, then inherited by the site through the same tokens and component classes.</p>
+        <div class="ds-status-row">
+          <span><i class="status-dot stable"></i> Stable foundation</span>
+          <span><i class="status-dot review"></i> Ready for review</span>
+          <span><i class="status-dot experimental"></i> Experimental</span>
+        </div>
+      </section>
+
+      <section class="ds-section" id="principles">
+        <div class="ds-section-heading"><p>01</p><div><h2>Principles</h2><span class="ds-badge stable">Foundation</span></div></div>
+        <div class="ds-principles">
+          <article><span>Clear first</span><h3>Reduce effort to understand</h3><p>Hierarchy and language should help recruiters find the project, role, decision, and outcome quickly.</p></article>
+          <article><span>Craft with purpose</span><h3>Details support the task</h3><p>Color, glass, and motion add character while keeping the work and its reasoning at the center.</p></article>
+          <article><span>Curiosity in layers</span><h3>Reward closer attention</h3><p>Small hover, scroll, and expansion behaviors reveal personality without blocking the main path.</p></article>
+        </div>
+      </section>
+
+      <section class="ds-section" id="foundations">
+        <div class="ds-section-heading"><p>02</p><div><h2>Color</h2><span class="ds-badge review">Review</span></div></div>
+        <p class="ds-guidance">Use neutral colors for most of the interface. Deep green is the shared interactive accent; the soft spectrum supports identity and project imagery without replacing it.</p>
+        <div class="ds-swatches">
+          <article><i style="--swatch:var(--color-ink)"></i><strong>Ink</strong><code>--color-ink</code><span>#1D211F</span></article>
+          <article><i style="--swatch:var(--color-canvas)"></i><strong>Canvas</strong><code>--color-canvas</code><span>#FBFBF9</span></article>
+          <article><i style="--swatch:var(--color-surface)"></i><strong>Surface</strong><code>--color-surface</code><span>#F1F1EE</span></article>
+          <article><i style="--swatch:var(--color-muted)"></i><strong>Muted</strong><code>--color-muted</code><span>#686E69</span></article>
+          <article><i style="--swatch:var(--color-accent)"></i><strong>Accent</strong><code>--color-accent</code><span>#0F7C6E</span></article>
+          <article><i style="--swatch:var(--color-peach)"></i><strong>Peach</strong><code>--color-peach</code><span>#F5CDBF</span></article>
+          <article><i style="--swatch:var(--color-lilac)"></i><strong>Lilac</strong><code>--color-lilac</code><span>#D9CDF8</span></article>
+          <article><i style="--swatch:var(--color-sky)"></i><strong>Sky</strong><code>--color-sky</code><span>#C8E4F1</span></article>
+          <article><i style="--swatch:var(--color-sage)"></i><strong>Sage</strong><code>--color-sage</code><span>#D9EBCF</span></article>
+          <article><i style="--swatch:var(--color-butter)"></i><strong>Butter</strong><code>--color-butter</code><span>#F2E7AE</span></article>
+        </div>
+        <div class="ds-gradient-sample"><span>Supporting identity gradient</span><strong>Peach → Lilac → Sky</strong></div>
+      </section>
+
+      <section class="ds-section" id="typography">
+        <div class="ds-section-heading"><p>03</p><div><h2>Typography</h2><span class="ds-badge review">Review</span></div></div>
+        <p class="ds-guidance">Aspekta carries the interface and editorial hierarchy at its natural spacing. Display and headings use no negative tracking; Georgia is reserved for short expressive accents and selected metrics.</p>
+        <div class="ds-type-list">
+          <article><div><code>Display / Hero</code><span>Aspekta 580 · Natural spacing</span></div><p class="type-hero">Making complex products easier to use</p></article>
+          <article><div><code>Display / Section</code><span>Aspekta 580 · Natural spacing</span></div><p class="type-section">Selected work</p></article>
+          <article><div><code>Heading / Card</code><span>Aspekta 580 · Natural spacing</span></div><p class="type-card">Helping customers understand spending</p></article>
+          <article><div><code>Body / Large</code><span>Aspekta 400 · 155%</span></div><p class="type-body-large">I work across digital banking and AI, helping people understand complex data and workflows.</p></article>
+          <article><div><code>Label</code><span>Aspekta 500 · Uppercase</span></div><p class="type-label">01 / SELECTED WORK</p></article>
+          <article><div><code>Accent</code><span>Georgia Italic</span></div><p class="type-accent">Clear experiences</p></article>
+        </div>
+      </section>
+
+      <section class="ds-section" id="shape-motion">
+        <div class="ds-section-heading"><p>04</p><div><h2>Spacing, shape &amp; motion</h2><span class="ds-badge review">Review</span></div></div>
+        <div class="ds-two-column">
+          <div>
+            <h3>Spacing</h3>
+            <div class="spacing-list">
+              <span><i style="width:4px"></i><code>4</code></span><span><i style="width:8px"></i><code>8</code></span><span><i style="width:16px"></i><code>16</code></span><span><i style="width:24px"></i><code>24</code></span><span><i style="width:32px"></i><code>32</code></span><span><i style="width:48px"></i><code>48</code></span><span><i style="width:64px"></i><code>64</code></span><span><i style="width:80px"></i><code>80</code></span>
+            </div>
+          </div>
+          <div>
+            <h3>Radius</h3>
+            <div class="radius-list"><span class="radius-sm">15</span><span class="radius-md">24</span><span class="radius-lg">34</span><span class="radius-xl">40</span><span class="radius-pill">Pill</span></div>
+          </div>
+        </div>
+        <div class="ds-motion-row">
+          <article><span class="motion-demo fast"></span><div><strong>Fast · 120ms</strong><p>Text and small state changes</p></div></article>
+          <article><span class="motion-demo base"></span><div><strong>Base · 240ms</strong><p>Buttons, menu, hover feedback</p></div></article>
+          <article><span class="motion-demo slow"></span><div><strong>Slow · 600ms</strong><p>Hero object and larger movement</p></div></article>
+        </div>
+      </section>
+
+      <section class="ds-section" id="home-hero">
+        <div class="ds-section-heading"><p>04a</p><div><h2>Home Hero</h2><span class="ds-badge review">Review</span></div></div>
+        <div class="ds-two-column">
+          <div><img src="../assets/images/alfie/alfie-portrait.svg" alt="Alfie line portrait wearing a pocket T-shirt" width="220" height="229"><p><code>hero-portrait</code> · Approved artwork<br>Transparent charcoal SVG. Preserve the glass card’s labels and tilt. Header displays Alfie Liu; Dock provides Work, About, and Resume.</p></div>
+          <div><h3>Headline and status dot</h3><p>The headline and introduction stream in once. The headline then cycles complex, financial, and AI-powered every 3.6 seconds while “easier to use” keeps a one-time green highlight. The status dot pulses while the Hero is visible.</p><p>Offscreen and background motion pauses. Reduced-motion mode shows “Making complex products easier to use” without the word cycle or pulse.</p><a class="small-link" href="../">View the live Home Hero ↗</a></div>
+        </div>
+      </section>
+
+      <section class="ds-section" id="actions">
+        <div class="ds-section-heading"><p>05</p><div><h2>Actions &amp; tags</h2><span class="ds-badge review">Review</span></div></div>
+        <div class="ds-component-block">
+          <div class="ds-component-meta"><div><h3>Button</h3><code>Primary · Secondary · Text</code></div><p>One primary action per content group. Use a text link when the surrounding card already communicates clickability.</p></div>
+          <div class="ds-action-row">
+            <a class="case-link ds-no-margin" href="#actions">View case study <b>↗</b></a>
+            <a class="case-link light ds-secondary ds-no-margin" href="#actions">More about me <b>↗</b></a>
+            <a class="text-link ds-no-margin" href="#actions">Explore selected work <span>↓</span></a>
+          </div>
+        </div>
+        <div class="ds-component-block">
+          <div class="ds-component-meta"><div><h3>Context tag</h3><code>Default pill · Editorial separator</code></div><p>Use two or three per project. Homepage editorial rows use quiet, slash-separated labels rather than pills.</p></div>
+          <div class="tags"><span>AI-powered finance</span><span>Conversational UX</span><span>Mobile</span></div>
+          <div class="project-editorial ds-editorial-tags"><div class="tags"><span>AI-powered finance</span><span>Conversational UX</span><span>Mobile</span></div></div>
+        </div>
+      </section>
+
+      <section class="ds-section" id="navigation">
+        <div class="ds-section-heading"><p>06</p><div><h2>Navigation</h2><span class="ds-badge experimental">Experimental</span></div></div>
+        <div class="ds-component-block">
+          <div class="ds-component-meta"><div><h3>Bottom Dock</h3><code>Translucent glass · Active · Hover · Focus · Always visible</code></div><p>Light floating navigation keeps Work, About, and Resume available while scrolling. The translucent surface retains a solid fallback, and each item has a 44px touch target. Resume opens the supplied PDF in a new tab.</p></div>
+          <div class="ds-demo-surface ds-dock-demo">
+            <nav class="dock" aria-label="Dock component example"><a class="dock-item active" href="#navigation">Work</a><a class="dock-item" href="#navigation">About</a><a class="dock-item" href="../assets/documents/Alfie-Liu-CV.pdf" target="_blank" rel="noopener" aria-label="Resume PDF (opens in a new tab)">Resume</a></nav>
+          </div>
+        </div>
+        <div class="ds-component-block">
+          <div class="ds-component-meta"><div><h3>Case Navigation</h3><code>Desktop sidebar · Glass progress · Active · Open</code></div><p>Wide screens use a persistent Back link and contents list. When the 1100px reading column leaves too little side space, the compact progress menu uses the Dock’s light glass surface; its open panel is more opaque so the chapter labels stay readable.</p></div>
+          <div class="ds-case-navigation-grid">
+            <div class="ds-sidebar-demo"><aside class="case-sidebar"><a class="case-back" href="#navigation">← Back</a><nav class="case-toc" aria-label="Case navigation example"><a href="#navigation">Overview</a><a class="is-active" aria-current="location" href="#navigation">Experience strategy</a><a href="#navigation">Design evolution</a><a href="#navigation">Outcome</a></nav></aside></div>
+            <div class="ds-demo-surface ds-progress-demo"><div class="reading-progress is-visible is-open"><button class="progress-trigger" type="button" aria-expanded="true"><span class="progress-menu-icon"><i></i><i></i><i></i></span><span class="progress-label">Experience strategy</span><span class="progress-percent">46%</span></button><div class="progress-menu"><a href="#navigation">Overview</a><a href="#navigation">The challenge</a><a class="is-active" aria-current="location" href="#navigation">Experience strategy</a><a href="#navigation">Outcome</a></div></div></div>
+          </div>
+        </div>
+        <div class="ds-component-block">
+          <div class="ds-component-meta"><div><h3>Site footer</h3><code>Desktop row · Stacked mobile · Hover · Focus</code></div><p>Shared across public pages. The location reads Vancouver; the full email address remains a mailto link that can also be copied. “A little note for AI” opens llms.txt in a new tab, as Resume does for the PDF. Primary links keep 44px touch targets and clear hover and focus states.</p></div>
+          <footer class="site-footer ds-footer-demo"><div class="footer-primary"><div class="footer-identity"><strong>Alfie Liu</strong><div class="footer-meta"><span>Product Designer · Vancouver © 2026</span><a href="../llms.txt" target="_blank" rel="noopener">A little note for AI</a></div></div><nav class="footer-links" aria-label="Footer example"><a href="../assets/documents/Alfie-Liu-CV.pdf" target="_blank" rel="noopener" aria-label="Resume PDF (opens in a new tab)">Resume</a><a href="https://www.linkedin.com/in/alfiekengliu" target="_blank" rel="noreferrer">LinkedIn</a><a href="mailto:alfie.kengliu@gmail.com">alfie.kengliu@gmail.com</a></nav></div></footer>
+        </div>
+      </section>
+
+      <section class="ds-section" id="about-gallery">
+        <div class="ds-section-heading"><p>06a</p><div><h2>About gallery</h2><span class="ds-badge review">Review</span></div></div>
+        <div class="ds-component-block">
+          <div class="ds-component-meta"><div><h3>Personal photo gallery</h3><code>Staggered · Pointer caption · Focus · Touch · Reduced motion</code></div><p>Three complete photos form a quiet, uneven vertical rhythm. Fine pointers turn into a following text label; keyboard focus, touch, and reduced motion keep the label fixed and visible.</p></div>
+          <div class="about-photo-gallery ds-about-gallery-demo" role="group" aria-label="About gallery component example">
+            <figure class="about-photo" tabindex="0" data-about-photo><img src="../assets/images/about/alfie-candid.jpg" width="1536" height="940" loading="lazy" decoding="async" alt="Alfie smiling on a sofa while holding a large blue shark plush"><figcaption>That’s me!</figcaption></figure>
+            <figure class="about-photo" tabindex="0" data-about-photo><img src="../assets/images/about/exhibition-behind-the-scenes.jpg" width="1558" height="940" loading="lazy" decoding="async" alt="Alfie testing an interactive exhibition table during installation"><figcaption>Behind the scenes of exhibition work</figcaption></figure>
+            <figure class="about-photo" tabindex="0" data-about-photo><img src="../assets/images/about/team-sharing.jpg" width="1634" height="940" loading="lazy" decoding="async" alt="Alfie sharing ideas with colleagues during a group discussion"><figcaption>Good ideas get better when shared</figcaption></figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="ds-section" id="cards">
+        <div class="ds-section-heading"><p>07</p><div><h2>Project cards</h2><span class="ds-badge review">Review</span></div></div>
+        <div class="ds-component-block">
+          <div class="ds-component-meta"><div><h3>Primary project card</h3><code>Transparent editorial row · Split desktop · Stacked mobile</code></div><p>Use for the two strongest case studies. Real imagery carries the color; the row has no filled card surface, and verified highlights are optional. Hover the whole row or focus its link to zoom the image 2.5% inside its frame.</p></div>
+          <a class="project project-feature project-editorial ds-card-demo" href="../genai-spending/">
+            <div class="project-media ratio-landscape"><img src="../assets/images/genai-spending/genai-00-hero-response.png" alt="Conversational spending analysis on a mobile banking interface" width="2048" height="1536" loading="lazy" decoding="async"></div>
+            <div class="project-copy"><div class="tags"><span>AI-powered finance</span><span>Conversational UX</span><span>Mobile</span></div><h3>Finding spending with AI</h3><p>Helping cardholders ask about spending and get answers through summaries, charts, and transaction details.</p><div class="highlights highlights-single" aria-label="Usability test result"><div><strong>62%</strong><span>Less time to complete a transaction-search task in a usability test</span></div></div><span class="case-link">View case study <b>↗</b></span></div>
+          </a>
+        </div>
+        <div class="ds-component-block">
+          <div class="ds-component-meta"><div><h3>Secondary project cards</h3><code>16:9 media · Shared top rule · Two-column desktop · Single-column mobile</code></div><p>Use for shorter stories without numeric ordering, metadata blocks, or unverified highlights. The shorter 16:9 media keeps the pair visually subordinate; both cards share one continuous divider on desktop and use the same restrained image zoom as the primary cards.</p></div>
+          <div class="ds-small-card-wrap secondary-grid"><a class="project-small project-editorial" href="../prompt-library/"><div class="project-media ratio-card"><img src="../assets/images/prompt-library/prompt-library-cover.png?v=20261006-1" alt="Blue abstract browser windows surrounding the UED Prompt Library title" width="2958" height="1638" loading="lazy" decoding="async"></div><div class="small-copy"><div class="tags"><span>AI tooling</span><span>Side project</span></div><h3>A prompt library for the team</h3><p>A browser extension I designed and developed to help an internal design team find, customize, and reuse structured AI prompts.</p><span class="small-link">View case study ↗</span></div></a><a class="project-small project-editorial" href="../interactive-exhibits/"><div class="project-media ratio-card"><img src="../assets/images/interactive-exhibits/648d6758c6651cb037d6867e_Comp%201%20(0-00-19-07).png" alt="Visitor using the transparent touchscreen in Exploration of Motor" loading="lazy" decoding="async"></div><div class="small-copy"><div class="tags"><span>Interaction design</span><span>Exhibits</span></div><h3>Interfaces for exploring physical exhibits</h3><p>Interactive installations that visitors explore through touch and gesture.</p><span class="small-link">View case study ↗</span></div></a></div>
+        </div>
+      </section>
+
+      <section class="ds-section" id="content">
+        <div class="ds-section-heading"><p>08</p><div><h2>Case content</h2><span class="ds-badge review">Review</span></div></div>
+        <div class="ds-two-column">
+          <div class="ds-component-block compact"><div class="ds-component-meta"><div><h3>Project metadata</h3><code>Three or four fields, as needed</code></div></div><div class="case-meta ds-meta-demo"><div><span>Role</span><strong>Product designer</strong></div><div><span>Scope</span><strong>UX, UI, prototyping</strong></div><div><span>Timeline</span><strong>2024</strong></div></div></div>
+          <div class="ds-component-block compact"><div class="ds-component-meta"><div><h3>Draft callout</h3><code>Internal prototype only</code></div></div><div class="draft-callout"><strong>Content placeholder</strong>This identifies information that still needs evidence, review, or public-release approval.</div></div>
+        </div>
+        <div class="ds-component-block">
+          <div class="ds-component-meta"><div><h3>Media placeholder</h3><code>Landscape · Tall · Short</code></div><p>Used only during layout development. Replace with real project media before publication.</p></div>
+          <div class="ds-media-grid"><div class="media-placeholder"><span>Landscape</span><small>Process or interface sequence</small></div><div class="media-placeholder"><span>Tall</span><small>Mobile flow</small></div><div class="media-placeholder"><span>Short</span><small>Outcome or quote</small></div></div>
+        </div>
+        <div class="ds-component-block">
+          <div class="ds-component-meta"><div><h3>Case video control</h3><code>Playing / Pause · Paused / Play</code></div><p>One quiet control across case videos. Loops are muted; visibility and reduced-motion preferences govern automatic playback.</p></div>
+          <div class="ds-video-states"><div class="case-main ds-video-sample"><span>Playing</span><button class="video-toggle" type="button" aria-pressed="true" aria-label="Pause example video">Pause</button></div><div class="case-main ds-video-sample"><span>Paused</span><button class="video-toggle" type="button" aria-pressed="false" aria-label="Play example video">Play</button></div></div>
+        </div>
+      </section>
+
+      <section class="ds-section" id="governance">
+        <div class="ds-section-heading"><p>09</p><div><h2>Usage rules</h2><span class="ds-badge stable">Foundation</span></div></div>
+        <div class="ds-rules">
+          <article><strong>1. Discuss by component and state.</strong><p>Example: “Primary project card / split / hover” instead of “the large box on the homepage.”</p></article>
+          <article><strong>2. Change tokens before isolated values.</strong><p>Global color, spacing, radius, type, and motion changes belong in shared tokens.</p></article>
+          <article><strong>3. Test here, then check real pages.</strong><p>The component page reveals consistency; the portfolio confirms that the rule works with real content.</p></article>
+          <article><strong>4. Record exceptions.</strong><p>If a project needs a unique pattern, document why it cannot use an existing variant.</p></article>
+          <article><strong>5. Mark maturity.</strong><p>Stable is safe to reuse. Review needs a decision. Experimental can change after prototype feedback.</p></article>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

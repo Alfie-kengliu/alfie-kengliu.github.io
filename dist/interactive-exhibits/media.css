@@ -1,0 +1,24 @@
+.case-body{min-width:0}
+.exhibits-role-meta{grid-template-columns:1fr}
+.exhibits-media{display:grid;gap:24px;margin:35px 0;min-width:0}
+.exhibits-media figure,.exhibits-hero-grid figure{margin:0;min-width:0}
+.exhibits-media img,.exhibits-hero-grid img{display:block;width:100%;height:auto}
+.exhibits-media figcaption,.exhibits-hero-grid figcaption{padding:10px 0;color:var(--muted);font-size:.8rem;line-height:1.45}
+.exhibits-hero-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;width:min(1440px,92vw);height:auto;margin:0 auto}
+.exhibit-hero-item{overflow:visible;border:0;border-radius:0;outline:0;background:transparent;box-shadow:none}
+.exhibit-hero-item>.exhibit-loop{border-radius:16px}
+.exhibit-hero-item figcaption{display:flex;flex-wrap:wrap;align-items:center;gap:8px 14px;padding:18px 4px 0;border:0;background:transparent;text-align:left}
+.exhibit-hero-title{color:var(--ink);font-size:24px;font-weight:500;letter-spacing:-.025em;line-height:1.15}
+.exhibit-hero-medium{padding:2px 0 2px 12px;border-left:2.5px solid var(--color-accent);color:#4f5551;font-size:20px;font-weight:300;line-height:1.25}
+.exhibit-loop{position:relative;overflow:hidden;background:#111;line-height:0}
+.exhibit-loop video{display:block;width:100%;height:auto;pointer-events:none;object-fit:contain}
+.exhibit-loop .loop-poster{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;pointer-events:none}
+.exhibit-loop.is-playing .loop-poster{visibility:hidden}
+.media-grid{display:grid}
+.media-grid-two{grid-template-columns:repeat(2,minmax(0,1fr))}
+.interaction-tile{display:flex;flex-direction:column;min-width:0}
+.interaction-tile>img,.interaction-tile>.exhibit-loop{width:100%;aspect-ratio:16/9;background:#f4f5f3}
+.interaction-tile>img{object-fit:contain}
+.interaction-tile>.exhibit-loop video,.interaction-tile>.exhibit-loop .loop-poster{width:100%;height:100%;object-fit:contain}
+@media(prefers-reduced-motion:reduce){.exhibit-loop.is-playing .loop-poster{visibility:visible}}
+@media(max-width:700px){.exhibits-hero-grid,.media-grid-two{grid-template-columns:1fr}.exhibits-hero-grid{gap:18px}.exhibits-media{gap:18px}}

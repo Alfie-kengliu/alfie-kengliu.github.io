@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><link rel="icon" type="image/svg+xml" href="../favicon.svg?v=alfie-text"><link rel="alternate icon" href="../favicon.ico?v=alfie-text"><link rel="apple-touch-icon" href="../apple-touch-icon.png?v=alfie-text">
+  <meta name="description" content="A browser extension designed and developed by Alfie Liu to help an internal design team find, customize, and reuse AI prompts.">
+  <title>AI Prompt Library — Alfie Liu</title>
+  <link rel="preload" href="../assets/fonts/AspektaVF.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="../styles.css?v=20261011-hero-glass3">
+  <script defer src="../app.js?v=20261011-hero-cycle2"></script>
+</head>
+<body class="subpage prompt-library-case">
+  <a class="skip-link" href="#case-content">Skip to case study</a>
+  <header class="site-header subpage-header" id="top">
+    <a class="brand" href="../" aria-label="Alfie Liu, home">Alfie Liu</a>
+    <div class="header-meta"><span>Side project 03</span><span>AI Prompt Library</span></div>
+  </header>
+
+  <div class="case-navigation-mobile reading-progress" data-case-navigation aria-label="Case study reading progress">
+    <button class="progress-trigger" type="button" aria-expanded="false" aria-controls="prompt-progress-menu"><span class="progress-menu-icon" aria-hidden="true"><i></i><i></i><i></i></span><span class="progress-label">Overview</span><span class="progress-percent">0%</span></button>
+    <div class="progress-menu" id="prompt-progress-menu">
+      <a href="#prompt-overview" data-case-nav-target="prompt-overview">Overview</a>
+      <a href="#prompt-gap" data-case-nav-target="prompt-gap">The gap</a>
+      <a href="#prompt-idea" data-case-nav-target="prompt-idea">The idea</a>
+      <a href="#prompt-workflow" data-case-nav-target="prompt-workflow">How it works</a>
+      <a href="#prompt-process" data-case-nav-target="prompt-process">Design process</a>
+      <a href="#prompt-rollout" data-case-nav-target="prompt-rollout">Shared with the team</a>
+      <a href="#prompt-reflection" data-case-nav-target="prompt-reflection">Reflection</a>
+    </div>
+  </div>
+
+  <main class="case-layout">
+    <aside class="case-sidebar" data-case-navigation aria-label="Case study contents">
+      <a class="case-back" href="../#work">← Back</a>
+      <nav class="case-toc" aria-label="On this page">
+        <a href="#prompt-overview" data-case-nav-target="prompt-overview">Overview</a>
+        <a href="#prompt-gap" data-case-nav-target="prompt-gap">The gap</a>
+        <a href="#prompt-idea" data-case-nav-target="prompt-idea">The idea</a>
+        <a href="#prompt-workflow" data-case-nav-target="prompt-workflow">How it works</a>
+        <a href="#prompt-process" data-case-nav-target="prompt-process">Design process</a>
+        <a href="#prompt-rollout" data-case-nav-target="prompt-rollout">Shared with the team</a>
+        <a href="#prompt-reflection" data-case-nav-target="prompt-reflection">Reflection</a>
+      </nav>
+    </aside>
+
+    <div class="case-main">
+      <section class="case-hero" id="prompt-overview" data-case-section data-case-label="Overview">
+        <p class="case-kicker">AI tooling · Side project · 2025</p>
+        <h1>A prompt library<br>for the team</h1>
+        <p class="case-lede">I designed and developed a browser extension that helps designers find, customize, and reuse AI prompt templates in their existing workflow.</p>
+        <div class="case-meta">
+          <div><span>Role</span><strong>Product Designer and Developer</strong></div>
+          <div><span>Goal</span><strong>Refine the design team’s workflow</strong></div>
+          <div><span>Status</span><strong>Released for internal team use</strong></div>
+        </div>
+      </section>
+
+      <figure class="prompt-hero-media case-cover">
+        <video muted loop playsinline preload="metadata" poster="../assets/images/prompt-library/prompt-library-find.png?v=20261006-2" data-loop-video aria-label="Prompt Library browser extension demonstration">
+          <source src="../assets/images/prompt-library/prompt-library-demo.mp4" type="video/mp4">
+          <a href="../assets/images/prompt-library/prompt-library-demo.mp4">Open the Prompt Library demonstration video</a>
+        </video>
+        <button class="video-toggle" type="button" data-video-toggle aria-label="Play Prompt Library browser extension demonstration">Play</button>
+        <figcaption>Demo of the final workflow.</figcaption>
+      </figure>
+
+      <div class="case-content" id="case-content">
+        <section class="case-section reveal" id="prompt-gap" data-case-section data-case-label="The gap">
+          <h2>Useful prompts were difficult to reuse</h2>
+          <div class="case-body">
+            <p>As AI became part of the team’s everyday work, useful prompts were often scattered across personal notes and conversations. This made them difficult to find, reuse, and improve as shared team knowledge.</p>
+            <p>Designers also lacked structured prompt templates tailored to recurring tasks such as writing, analysis, ideation, and design review.</p>
+          </div>
+        </section>
+
+        <section class="case-section reveal" id="prompt-idea" data-case-section data-case-label="The idea">
+          <h2>Bring reusable prompts into the workflow</h2>
+          <div class="case-body">
+            <p>I organized prompts into reusable templates and built the library as a browser extension. Designers could open it from an existing AI input field instead of switching to a separate tool.</p>
+            <blockquote class="prompt-principle">Reduce the distance between finding a prompt and using it.</blockquote>
+          </div>
+        </section>
+
+        <section class="case-section reveal" id="prompt-workflow" data-case-section data-case-label="How it works">
+          <h2>How it works</h2>
+          <div class="case-body prompt-workflow-intro">
+            <p>The library stays close to where designers already work.</p>
+          </div>
+          <div class="prompt-steps" aria-label="Prompt Library workflow">
+            <article>
+              <figure><img src="../assets/images/prompt-library/prompt-library-open.png?v=20261006-2" alt="An AI input field with the /ued shortcut being typed" width="2754" height="1294" loading="lazy" decoding="async"></figure>
+              <div><span>01 · Open</span><h3>Start where you work</h3><p>Type <code>/ued</code> in an input field to open the library where you are working.</p></div>
+            </article>
+            <article>
+              <figure><img src="../assets/images/prompt-library/prompt-library-find.png?v=20261006-2" alt="Prompt Library categories, filters, search and prompt cards" width="2746" height="1294" loading="lazy" decoding="async"></figure>
+              <div><span>02 · Find</span><h3>Find a useful prompt</h3><p>Browse by category, search by keyword, or filter prompts by task and platform.</p></div>
+            </article>
+            <article>
+              <figure><img src="../assets/images/prompt-library/prompt-library-customize.png?v=20261006-2" alt="Prompt variables and a live preview displayed side by side" width="2746" height="1294" loading="lazy" decoding="async"></figure>
+              <div><span>03 · Customize</span><h3>Adapt the prompt to the task</h3><p>Fill in the required variables while previewing the completed prompt in real time.</p></div>
+            </article>
+            <article>
+              <figure><img src="../assets/images/prompt-library/prompt-library-insert.png?v=20261006-2" alt="A completed structured prompt inserted into the original AI input field" width="2746" height="1294" loading="lazy" decoding="async"></figure>
+              <div><span>04 · Insert</span><h3>Continue in the same workflow</h3><p>Insert the prompt into the original input field.</p></div>
+            </article>
+          </div>
+        </section>
+
+        <section class="case-section reveal" id="prompt-process" data-case-section data-case-label="Design process">
+          <h2>Designing for reuse across the team</h2>
+          <div class="case-body">
+            <div class="prompt-process-line" aria-label="Design process summary">
+              <div class="prompt-process-step"><span class="prompt-process-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="3"></rect><path d="M3 9h18"></path><path d="M7 6.5h.01M10 6.5h.01"></path></svg></span><strong>Access in context</strong></div>
+              <i aria-hidden="true">→</i>
+              <div class="prompt-process-step"><span class="prompt-process-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="5.5"></circle><path d="m15 15 5 5"></path></svg></span><strong>Find a starting point</strong></div>
+              <i aria-hidden="true">→</i>
+              <div class="prompt-process-step"><span class="prompt-process-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 7h10M18 7h2M4 17h2M10 17h10"></path><circle cx="16" cy="7" r="2"></circle><circle cx="8" cy="17" r="2"></circle></svg></span><strong>Customize the template</strong></div>
+            </div>
+            <div class="prompt-decisions">
+              <article><span>01</span><h3>Start inside the existing workflow</h3><p>I chose a browser extension so designers could open the library from an AI input field without switching to another tool.</p></article>
+              <article><span>02</span><h3>Organize shared prompt knowledge</h3><p>I organized prompts by category, task, and platform, and added search so the team could find a relevant prompt.</p></article>
+              <article><span>03</span><h3>Turn prompts into adaptable templates</h3><p>I separated reusable instructions from task-specific details. Guided fields and a live preview showed how each prompt would look before use.</p></article>
+            </div>
+          </div>
+        </section>
+
+        <section class="case-section reveal" id="prompt-rollout" data-case-section data-case-label="Shared with the team">
+          <h2>From side project to internal use</h2>
+          <div class="case-body prompt-rollout-layout">
+            <div class="prompt-rollout-copy"><p>I introduced the extension in an internal team walkthrough and released it for everyday use. The session showed how designers could find a prompt, adapt it to their task, and use it in their AI workflow.</p></div>
+            <figure class="prompt-team-media">
+              <img src="../assets/images/prompt-library/prompt-library-team-share.jpg" alt="Alfie introducing the Prompt Library during an internal team session" width="2400" height="1800" loading="lazy" decoding="async">
+              <figcaption>Introducing the Prompt Library during an internal team sharing session.</figcaption>
+            </figure>
+          </div>
+        </section>
+
+        <section class="case-section reveal" id="prompt-reflection" data-case-section data-case-label="Reflection">
+          <h2>Adoption depends on where a tool fits</h2>
+          <div class="case-body">
+            <p class="prompt-reflection">This side project showed me that helping a team use AI is not only about writing better prompts. It also depends on how people organize and find shared knowledge, and how easily a tool fits into their existing workflow.</p>
+          </div>
+        </section>
+      </div>
+
+      <a class="next-project" href="../interactive-exhibits/"><span>Next project</span><strong>Interactive Exhibits ↗</strong></a>
+    </div>
+  </main>
+
+  <footer class="site-footer"><div class="footer-primary"><div class="footer-identity"><strong>Alfie Liu</strong><div class="footer-meta"><span>Product Designer · Vancouver © 2026</span><a href="../llms.txt" target="_blank" rel="noopener">A little note for AI</a></div></div><nav class="footer-links" aria-label="Footer links"><a href="../assets/documents/Alfie-Liu-CV.pdf" target="_blank" rel="noopener" aria-label="Resume PDF (opens in a new tab)">Resume</a><a href="https://www.linkedin.com/in/alfiekengliu" target="_blank" rel="noreferrer">LinkedIn</a><a href="mailto:alfie.kengliu@gmail.com">alfie.kengliu@gmail.com</a></nav></div></footer>
+  <nav class="dock" aria-label="Primary navigation"><a class="dock-item active" href="../#work">Work</a><a class="dock-item" href="../about/">About</a><a class="dock-item" href="../assets/documents/Alfie-Liu-CV.pdf" target="_blank" rel="noopener" aria-label="Resume PDF (opens in a new tab)">Resume</a></nav>
+  
+</body>
+</html>

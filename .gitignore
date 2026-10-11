@@ -1,0 +1,6 @@
+# Local operating-system files are not part of the website.
+**/.DS_Store
+
+# Do not commit local credentials if they are added later.
+.env
+.env.*

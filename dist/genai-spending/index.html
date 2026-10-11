@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><link rel="icon" type="image/svg+xml" href="../favicon.svg?v=alfie-text"><link rel="alternate icon" href="../favicon.ico?v=alfie-text"><link rel="apple-touch-icon" href="../apple-touch-icon.png?v=alfie-text">
+  <meta name="description" content="A product design case study about helping cardholders find spending with conversational AI.">
+  <title>Finding spending with AI — Alfie Liu</title>
+  <link rel="preload" href="../assets/fonts/AspektaVF.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="../styles.css?v=20261011-hero-glass3">
+  <script defer src="../app.js?v=20261011-hero-cycle2"></script>
+</head>
+<body class="subpage genai-case">
+  <a class="skip-link" href="#case-content">Skip to case study</a>
+  <header class="site-header subpage-header" id="top">
+    <a class="brand" href="../" aria-label="Alfie Liu, home">Alfie Liu</a>
+    <div class="header-meta"><span>Case study 01</span><span>Conversational Spending Analysis</span></div>
+  </header>
+
+  <div class="case-navigation-mobile reading-progress" data-case-navigation aria-label="Case study reading progress">
+    <button class="progress-trigger" type="button" aria-expanded="false" aria-controls="genai-progress-menu">
+      <span class="progress-menu-icon" aria-hidden="true"><i></i><i></i><i></i></span>
+      <span class="progress-label">Overview</span><span class="progress-percent">0%</span>
+    </button>
+    <div class="progress-menu" id="genai-progress-menu">
+      <a href="#genai-overview" data-case-nav-target="genai-overview">Overview</a>
+      <a href="#genai-problem" data-case-nav-target="genai-problem">The problem</a>
+      <a href="#genai-strategy" data-case-nav-target="genai-strategy">Product strategy</a>
+      <a href="#genai-product-fit" data-case-nav-target="genai-product-fit">01 · Product fit</a>
+      <a href="#genai-clear-answers" data-case-nav-target="genai-clear-answers">02 · Predictable responses</a>
+      <a href="#genai-foundation" data-case-nav-target="genai-foundation">03 · Guardrails &amp; recovery</a>
+      <a href="#genai-outcome" data-case-nav-target="genai-outcome">Outcome &amp; reflection</a>
+    </div>
+  </div>
+
+  <main class="case-layout">
+    <aside class="case-sidebar" data-case-navigation aria-label="Case study contents">
+      <a class="case-back" href="../#work">← Back</a>
+      <nav class="case-toc" aria-label="On this page">
+        <a href="#genai-overview" data-case-nav-target="genai-overview">Overview</a>
+        <a href="#genai-problem" data-case-nav-target="genai-problem">The problem</a>
+        <a href="#genai-strategy" data-case-nav-target="genai-strategy">Product strategy</a>
+        <a href="#genai-product-fit" data-case-nav-target="genai-product-fit">01 · Product fit</a>
+        <a href="#genai-clear-answers" data-case-nav-target="genai-clear-answers">02 · Predictable responses</a>
+        <a href="#genai-foundation" data-case-nav-target="genai-foundation">03 · Guardrails &amp; recovery</a>
+        <a href="#genai-outcome" data-case-nav-target="genai-outcome">Outcome &amp; reflection</a>
+      </nav>
+    </aside>
+    <div class="case-main">
+    <section class="case-hero" id="genai-overview" data-case-section data-case-label="Overview">
+      <p class="case-kicker">AI-powered banking | Conversational UX | Product design</p>
+      <h1>Finding spending with AI</h1>
+      <p class="case-lede">I led the design of a conversational banking feature that turns open-ended questions about spending into answers with summaries, charts, and transaction details.</p>
+      <div class="case-meta">
+        <div><span>Role</span><strong>Product Designer</strong></div>
+        <div><span>Stage</span><strong>Concept → launch</strong></div>
+        <div><span>Usability test</span><strong>62% less time to complete a transaction-search task</strong></div>
+      </div>
+      <div class="hero-overview hero-overview-split">
+        <div class="hero-overview-copy">
+          <h2>Helping cardholders find the right transaction in their own words</h2>
+          <p>Cardholders can ask questions and receive personalized answers, spending insights, and visual summaries based on their transaction data.</p>
+        </div>
+        <figure class="genai-video genai-video-square">
+          <video muted loop playsinline preload="metadata" poster="../assets/images/genai-spending/ai-analysis-tutorial-poster.png" data-loop-video aria-label="Conversational spending analysis interaction showing a question, generated response, chart, and transaction details">
+            <source src="../assets/images/genai-spending/ai-analysis-tutorial.mp4" type="video/mp4">
+            Your browser does not support this video. <a href="../assets/images/genai-spending/ai-analysis-tutorial.mp4">Open the conversational spending analysis video</a>.
+          </video>
+          <button class="video-toggle" type="button" data-video-toggle aria-label="Play conversational spending analysis animation">Play</button>
+        </figure>
+      </div>
+    </section>
+
+    <div class="case-content" id="case-content">
+      <section class="case-section reveal" id="genai-problem" data-case-section data-case-label="The problem">
+        <div class="case-section-heading"><p class="section-number">Discovery</p><h2>Cardholders often had to work through complex search filters to find a specific transaction</h2></div>
+        <div class="case-body">
+          <p class="lead-paragraph">Transaction records could help cardholders understand where and when they spent money. Their value depended on whether people could find the information they needed.</p>
+          <div class="research-summary"><strong>Research</strong><p>Research by the team found that some cardholders struggled to find specific transactions. One recurring issue was that the merchant name they remembered did not always match the name in the transaction system, which made keyword searches less effective.</p></div>
+        </div>
+      </section>
+
+      <section class="case-section reveal" id="genai-strategy" data-case-section data-case-label="Product strategy">
+        <div class="case-section-heading"><p class="section-number">02 / PRODUCT STRATEGY</p><h2>Turning an AI initiative into a useful cardholder experience</h2></div>
+        <div class="case-body">
+          <p class="lead-paragraph">Based on the company’s direction to explore generative AI, I focused on two experience principles.</p>
+          <div class="strategy-principles">
+            <article><span>01</span><h3>Conversational AI Experience</h3><p>We explored how conversational AI could simplify spending inquiries. Instead of learning a complex query structure, cardholders could describe a date, merchant, or amount in their own words to find the information they needed.</p></article>
+            <article><span>02</span><h3>Product Integration</h3><p>Rather than creating a separate AI product, we designed the service as an extension of the existing banking experience. It let cardholders move between AI and familiar banking functions without losing context.</p></article>
+          </div>
+          <blockquote class="strategy-quote"><span>Design challenge</span><p>Support open-ended questions while keeping answers clear and familiar banking tasks within reach.</p></blockquote>
+        </div>
+      </section>
+
+      <section class="case-section decision-section reveal" id="genai-product-fit" data-case-section data-case-label="01 · Product fit">
+        <div class="case-section-heading"><p class="section-number">DESIGN DECISION 01</p><h2>Making AI part of the banking experience</h2></div>
+        <div class="case-body">
+          <p class="lead-paragraph">I designed the experience as part of the existing banking product.</p>
+          <p>Because the company had no existing framework for AI services, we reviewed common conversational patterns and adapted them to the bank’s visual style and interaction rules.</p>
+          <p>Next, we looked for natural ways to fit AI into the banking app. We wanted cardholders to move between familiar banking features and the conversation without getting stuck in the AI service.</p>
+          <div class="ai-journey" aria-label="Three stages of the conversational AI experience">
+            <article><span>01</span><h3>Enter the AI service</h3><p>Start from a familiar banking feature and understand how the service works.</p></article>
+            <article><span>02</span><h3>During the conversation</h3><p>Ask a question, receive an answer, and follow guidance when the service needs clarification or cannot complete the request.</p></article>
+            <article><span>03</span><h3>Next step</h3><p>Act on the information or return to a familiar banking function to continue the task.</p></article>
+          </div>
+          <figure class="genai-figure product-fit-diagram">
+            <img src="../assets/images/genai-spending/conversation-spending-analysis.png" alt="Conversational spending analysis journey from getting started and exploring spending to follow-up questions, transaction details, and customer support" width="1536" height="1024" loading="lazy" decoding="async">
+            <figcaption>The journey connects open-ended questions to guidance, transaction details, and customer support.</figcaption>
+          </figure>
+
+          <h3>Keeping the original task within reach</h3>
+          <p>Users could minimize the AI experience to a floating action button and return to the original page without losing the conversation or their place.</p>
+          <figure class="genai-video genai-video-portrait genai-section-video">
+            <video muted loop playsinline preload="metadata" poster="../assets/images/genai-spending/fab-interaction-poster.png" data-loop-video aria-label="Floating action button interaction showing the AI experience minimized over the original spending page">
+              <source src="../assets/images/genai-spending/fab-interaction.mp4" type="video/mp4">
+              Your browser does not support this video. <a href="../assets/images/genai-spending/fab-interaction.mp4">Open the floating action button interaction video</a>.
+            </video>
+            <button class="video-toggle" type="button" data-video-toggle aria-label="Play floating action button animation">Play</button>
+            <figcaption>Prototype of the floating action button interaction</figcaption>
+          </figure>
+
+          <h3>Designing the service language</h3>
+          <p>I also set voice and tone guidelines for the service so responses would feel neutral, professional, gentle, and appropriate for banking. The legal team defined legal requirements; my work focused on how the service communicated with users.</p>
+          <div class="voice-grid"><div><span>Language</span><p>Use Traditional Chinese and familiar local wording.</p></div><div><span>Relationship</span><p>Refer to the service as “our service” or “we,” and address users as “you.”</p></div><div><span>Tone</span><p>Avoid bureaucratic language, exclamation marks, emoji, and unnecessary apologies.</p></div><div><span>Typography</span><p>Use 「」 for emphasis instead of English quotation marks.</p></div></div>
+        </div>
+      </section>
+
+      <section class="case-section decision-section reveal" id="genai-clear-answers" data-case-section data-case-label="02 · Predictable responses">
+        <div class="case-section-heading"><p class="section-number">DESIGN DECISION 02</p><h2>Designing clear and predictable AI responses</h2></div>
+        <div class="case-body">
+          <p class="lead-paragraph">Open-ended questions still needed predictable answers. I defined how the service presented information, explained what was happening with the data, and guided cardholders when it could not find an expected result.</p>
+          <p>For a question such as “How much did I spend at 7-Eleven last month?”, the design identified the date range and merchant name, then showed matching spending data in a concise answer, transaction details, and a chart.</p>
+          <figure class="genai-figure response-anatomy-figure">
+            <img src="../assets/images/genai-spending/spending-summary-transaction-details.png" alt="Two conversational spending response views: a spending summary with category breakdowns and a transaction details and trends view with transaction cards and charts" width="2982" height="1558" loading="lazy" decoding="async">
+            <figcaption>Two response views show a concise spending summary and the transaction details and trends behind it.</figcaption>
+          </figure>
+          <h3>When the service cannot find a match</h3>
+          <p>When the service could not find a matching transaction, the response needed to explain a possible reason and help cardholders adjust their question instead of offering a generic apology.</p>
+          <blockquote class="language-example"><span>Empty-result example</span><p>“No matching transactions were found, or the transaction details may not have been posted yet.”</p><small>It names a possible reason instead of using a generic apology.</small></blockquote>
+        </div>
+      </section>
+
+      <section class="case-section decision-section reveal" id="genai-foundation" data-case-section data-case-label="03 · Guardrails &amp; recovery">
+        <div class="case-section-heading"><p class="section-number">DESIGN DECISION 03</p><h2>Handling unclear questions and failed responses</h2></div>
+        <div class="case-body">
+          <p>To build trust, I mapped how the service should respond to supported, unclear, sensitive, or out-of-scope questions, as well as incomplete answers. The flow checks questions and answers, asks for clarification when needed, and gives users a next step when something goes wrong.</p>
+          <figure class="genai-figure guardrail-figure">
+            <img src="../assets/images/genai-spending/guardrails-recovery-paths.png" alt="Guardrail flow from user request through input and response checks, with branches for sensitive, out-of-scope, unclear, and incomplete requests" width="1774" height="887" loading="lazy" decoding="async">
+          </figure>
+        </div>
+      </section>
+
+      <section class="case-section outcome-section reveal" id="genai-outcome" data-case-section data-case-label="Outcome &amp; reflection">
+        <div class="case-section-heading"><p class="section-number">OUTCOME &amp; REFLECTION</p><h2>Testing and reflection</h2></div>
+        <div class="case-body">
+          <div class="outcome-summary">
+            <article class="outcome-highlight"><span>Usability testing</span><strong>62%</strong><h3>Less time to find spending information</h3></article>
+            <p>In a usability test, 20 participants completed tasks to find specific spending information. They took 62% less time than with traditional filter-based search.</p>
+          </div>
+          <blockquote class="reflection-text">Designing conversational AI is not only about adding a prompt box. The experience depends on how answers are structured, how limits and failures are communicated, and whether users can return to familiar product flows when conversation is not enough.</blockquote>
+          <aside class="confidentiality-note" aria-label="Confidential project note">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 10V7a5 5 0 0 1 10 0v3m-8 0V7a3 3 0 0 1 6 0v3m-9 0h12a1 1 0 0 1 1 1v9a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1v-9a1 1 0 0 1 1-1Zm6 4v3"/></svg>
+            <div><strong>Confidential project</strong><p>Because this project is confidential, only selected information can be shared publicly. <a href="mailto:alfie.kengliu@gmail.com">Reach out to me directly</a> to learn more.</p></div>
+          </aside>
+        </div>
+      </section>
+    </div>
+
+    <a class="next-project" href="../financial-adventure/"><span>Next project</span><strong>Financial Adventure ↗</strong></a>
+    </div>
+  </main>
+  <footer class="site-footer"><div class="footer-primary"><div class="footer-identity"><strong>Alfie Liu</strong><div class="footer-meta"><span>Product Designer · Vancouver © 2026</span><a href="../llms.txt" target="_blank" rel="noopener">A little note for AI</a></div></div><nav class="footer-links" aria-label="Footer links"><a href="../assets/documents/Alfie-Liu-CV.pdf" target="_blank" rel="noopener" aria-label="Resume PDF (opens in a new tab)">Resume</a><a href="https://www.linkedin.com/in/alfiekengliu" target="_blank" rel="noreferrer">LinkedIn</a><a href="mailto:alfie.kengliu@gmail.com">alfie.kengliu@gmail.com</a></nav></div></footer>
+  <nav class="dock" aria-label="Primary navigation"><a class="dock-item active" href="../#work">Work</a><a class="dock-item" href="../about/">About</a><a class="dock-item" href="../assets/documents/Alfie-Liu-CV.pdf" target="_blank" rel="noopener" aria-label="Resume PDF (opens in a new tab)">Resume</a></nav>
+</body>
+</html>

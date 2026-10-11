@@ -1,0 +1,28 @@
+# Alfie Liu — Product Designer
+
+> Alfie Liu is a product designer based in British Columbia, Canada, with experience in digital banking, conversational AI, and interactive experiences. He designs products that help people understand complex information and complete tasks.
+
+His background spans interactive exhibitions and digital products. His work includes user flows, interaction design, visual design, prototyping, and collaboration with developers. He has also designed and developed an AI prompt-library browser extension for an internal design team.
+
+## Core expertise
+
+- **Digital banking and financial information:** Designing ways for people to find and understand spending data, from transaction details to visual summaries.
+- **Conversational UX and AI-powered products:** Turning open-ended questions into structured answers and connecting AI interactions with familiar product flows.
+- **Interaction design and prototyping:** Mapping user journeys, designing interfaces and states, and developing prototypes to test how an experience works.
+- **AI tools for design teams:** Designing and building tools that help designers organize, customize, and reuse prompt templates in their workflow.
+- **Physical-digital experiences:** Connecting mobile interfaces, touch interactions, and physical exhibits through guided activities and storytelling.
+
+## Selected work
+
+- [Finding spending with AI](/genai-spending/): A conversational spending-analysis experience in digital banking. Alfie led the product design, combining summaries, charts, and transaction details into structured answers and integrating the AI experience with existing banking functions. In a usability test, 20 participants took 62% less time to find specific spending information than with traditional filter-based search. Relevant experience: conversational UX, financial data visualization, and product integration.
+- [Financial Adventure](/financial-adventure/): A mobile-guided financial-learning experience for Financial Explorer 62, Taiwan Academy of Banking and Finance. As Product Designer, Alfie worked on interaction design, visual design, user flows, and prototyping. He mapped a five-stage journey across 58 interface screens, connecting on-screen missions with physical exhibits. Relevant experience: mobile UX, experience flows, and interactive storytelling.
+- [A prompt library for the team](/prompt-library/): An AI tooling side project that Alfie designed and developed for an internal design team. The browser extension helps designers find, customize, and reuse prompt templates, with prompts organized by category, task, and platform. Relevant experience: workflow tools, information organization, and hands-on product development.
+- [Interactive Exhibits](/interactive-exhibits/): Cube N and Exploration of Motor bring together digital interfaces and physical installations. The case presents touch interactions, transparent screens, and story-based experiences. Relevant experience: exhibition interaction design and physical-digital interfaces.
+
+## Background and contact
+
+- [About Alfie](/about/): His background and approach to designing across exhibitions, digital banking, and AI-powered experiences.
+- [Portfolio](/): An overview of his selected product design work.
+- [Resume PDF](/assets/documents/Alfie-Liu-CV.pdf): Alfie's current English CV, supplied for this portfolio. Opens as a PDF and can be downloaded.
+- [LinkedIn](https://www.linkedin.com/in/alfiekengliu): Professional profile.
+- [Email](mailto:alfie.kengliu@gmail.com): Contact Alfie about product design opportunities or his work.
