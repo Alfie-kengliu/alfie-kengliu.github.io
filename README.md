@@ -1,6 +1,6 @@
-# Portfolio Prototype v0.2 — local working preview
+# Portfolio Prototype v0.2
 
-The static site in `dist/` is the local working preview. The hosted v0.1 snapshot has not been updated in this content round.
+The static site in `dist/` is the source for both the local working preview and the public GitHub Pages site at [alfie-kengliu.github.io](https://alfie-kengliu.github.io/). The older private hosted preview remains a separate snapshot.
 
 ## Content maintenance
 
@@ -16,15 +16,17 @@ Edit website copy directly in the relevant HTML file under `dist/`, then check i
 
 From this repository's root, run `python3 -m http.server 4180 --bind 127.0.0.1 --directory dist`, then open `http://127.0.0.1:4180/`.
 
-Validate locally before publishing. Only update the hosted preview at an agreed milestone or when Alfie explicitly requests it.
+Validate locally before publishing. Only update a hosted site at an agreed milestone or when Alfie explicitly requests it.
 
 Aspekta uses the SIL OFL 1.1; its license is in `dist/assets/fonts/LICENSE.txt`.
 
-## GitHub preparation
+## GitHub publishing
 
 This repository contains the website only. Its entry point is `dist/index.html`; all page HTML, shared CSS/JavaScript, fonts, images, and videos used by the site must be included when preparing the first GitHub commit. The surrounding workspace's `docs/`, `archive/`, `tools/`, and other working materials are not part of this repository.
 
-Before making the repository public, review the rights and confidentiality of project images/videos, draft or placeholder labels, and claims that still need verification. The tracked `.openai/hosting.json` belongs to the existing private preview and is not a GitHub Pages configuration. Keep the existing hosting connection intact; adding GitHub and deciding how to publish there are separate steps. Pushing code to GitHub should not be treated as approval to publish a new public site.
+Before publishing a milestone, review the rights and confidentiality of project images/videos, draft or placeholder labels, and claims that still need verification. The tracked `.openai/hosting.json` belongs to the existing private preview and is not a GitHub Pages configuration.
+
+GitHub Pages deploys only `dist/` through `.github/workflows/deploy-pages.yml`. The workflow uses `workflow_dispatch`, so routine pushes do not update the public site. Run **Deploy portfolio to GitHub Pages** manually from the repository's Actions tab only after the milestone has been approved.
 
 
 ## Content migration validation — 2026-09-24
