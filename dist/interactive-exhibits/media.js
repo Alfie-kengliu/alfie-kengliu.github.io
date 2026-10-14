@@ -43,7 +43,7 @@
     const video = state.video;
     video.muted = true;
     video.defaultMuted = true;
-    state.button.addEventListener('click', () => {
+    const togglePlayback = () => {
       if (video.paused) {
         state.userPaused = false;
         state.blocked = false;
@@ -53,7 +53,9 @@
         sync(state);
       }
       updateToggle(state);
-    });
+    };
+    state.button.addEventListener('click', togglePlayback);
+    video.addEventListener('click', togglePlayback);
     video.addEventListener('playing', () => {
       if (allowed(state)) video.parentElement.classList.add('is-playing');
       else sync(state);

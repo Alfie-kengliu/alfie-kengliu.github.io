@@ -29,9 +29,9 @@
 
 .financial-outcome-grid{display:grid;grid-template-columns:1fr 1fr;align-items:start;gap:clamp(32px,6vw,72px)}
 .financial-outcome-story p,.financial-outcome-score>p:last-child{margin:0;font-size:1.08rem;color:#4f5551}
-.financial-outcome-score{min-width:0}
+.financial-outcome-score{min-width:0;padding:clamp(24px,3vw,38px);border:1px solid var(--line);border-radius:24px;background:#f7f8f5}
 .financial-outcome-score .financial-score-label{margin:0 0 10px;color:#4f5551;font-size:1rem}
-.financial-outcome-score .financial-score-number{margin:0;color:#2e77b8;font-size:clamp(4rem,7.5vw,7rem);font-weight:580;line-height:1;letter-spacing:-.075em;white-space:nowrap}
+.financial-outcome-score .financial-score-number{margin:0;color:var(--color-accent);font-size:clamp(64px,5.5vw,72px);font-weight:580;line-height:1;letter-spacing:-.075em;white-space:nowrap}
 .financial-score-number span{font-size:.47em;letter-spacing:-.045em}
 .financial-outcome-score .financial-score-source{margin:12px 0 28px;color:#59625d;font-size:.84rem;line-height:1.5}
 

@@ -6,8 +6,8 @@
   <meta name="description" content="A browser extension designed and developed by Alfie Liu to help an internal design team find, customize, and reuse AI prompts.">
   <title>AI Prompt Library — Alfie Liu</title>
   <link rel="preload" href="../assets/fonts/AspektaVF.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="../styles.css?v=20261011-hero-glass3">
-  <script defer src="../app.js?v=20261011-hero-cycle2"></script>
+  <link rel="stylesheet" href="../styles.css?v=20261014-work-cycle-labels">
+  <script defer src="../app.js?v=20261014-work-cycle"></script>
 </head>
 <body class="subpage prompt-library-case">
   <a class="skip-link" href="#case-content">Skip to case study</a>
@@ -31,7 +31,7 @@
 
   <main class="case-layout">
     <aside class="case-sidebar" data-case-navigation aria-label="Case study contents">
-      <a class="case-back" href="../#work">← Back</a>
+      <a class="case-back" href="../#work">← Back to selected work</a>
       <nav class="case-toc" aria-label="On this page">
         <a href="#prompt-overview" data-case-nav-target="prompt-overview">Overview</a>
         <a href="#prompt-gap" data-case-nav-target="prompt-gap">The gap</a>
@@ -45,6 +45,7 @@
 
     <div class="case-main">
       <section class="case-hero" id="prompt-overview" data-case-section data-case-label="Overview">
+        <a class="case-return" href="../#work">← Back to selected work</a>
         <p class="case-kicker">AI tooling · Side project · 2025</p>
         <h1>A prompt library<br>for the team</h1>
         <p class="case-lede">I designed and developed a browser extension that helps designers find, customize, and reuse AI prompt templates in their existing workflow.</p>
@@ -128,27 +129,33 @@
           <h2>From side project to internal use</h2>
           <div class="case-body prompt-rollout-layout">
             <div class="prompt-rollout-copy"><p>I introduced the extension in an internal team walkthrough and released it for everyday use. The session showed how designers could find a prompt, adapt it to their task, and use it in their AI workflow.</p></div>
-            <figure class="prompt-team-media">
-              <img src="../assets/images/prompt-library/prompt-library-team-share.jpg" alt="Alfie introducing the Prompt Library during an internal team session" width="2400" height="1800" loading="lazy" decoding="async">
-              <figcaption>Introducing the Prompt Library during an internal team sharing session.</figcaption>
-            </figure>
+            <div class="prompt-rollout-media">
+              <figure class="prompt-team-media">
+                <div class="prompt-rollout-frame"><img src="../assets/images/prompt-library/prompt-library-team-share.jpg" alt="Alfie introducing the Prompt Library during an internal team session" width="2400" height="1800" loading="lazy" decoding="async"></div>
+                <figcaption>Introducing the Prompt Library during an internal team sharing session.</figcaption>
+              </figure>
+              <figure class="prompt-team-video" data-content-status="confirmed">
+                <div class="prompt-rollout-frame"><video muted loop playsinline preload="metadata" poster="../assets/images/prompt-library/prompt-library-team-walkthrough-poster.jpg" data-loop-video aria-label="Team members attending a Prompt Library walkthrough"><source src="../assets/images/prompt-library/prompt-library-team-walkthrough.mp4" type="video/mp4"></video><button class="video-toggle" type="button" data-video-toggle aria-label="Play team walkthrough video">Play</button></div>
+                <figcaption>Team walkthrough of the Prompt Library.</figcaption>
+              </figure>
+            </div>
           </div>
         </section>
 
         <section class="case-section reveal" id="prompt-reflection" data-case-section data-case-label="Reflection">
           <h2>Adoption depends on where a tool fits</h2>
           <div class="case-body">
-            <p class="prompt-reflection">This side project showed me that helping a team use AI is not only about writing better prompts. It also depends on how people organize and find shared knowledge, and how easily a tool fits into their existing workflow.</p>
+            <blockquote class="case-reflection">This side project showed me that helping a team use AI is not only about writing better prompts. It also depends on how people organize and find shared knowledge, and how easily a tool fits into their existing workflow.</blockquote>
           </div>
         </section>
       </div>
 
-      <a class="next-project" href="../interactive-exhibits/"><span>Next project</span><strong>Interactive Exhibits ↗</strong></a>
+      <nav class="case-end-nav" aria-label="Explore more projects"><a class="case-end-link case-end-link-back" href="../financial-adventure/"><b class="case-end-arrow" aria-hidden="true">←</b><span class="case-end-copy"><span class="case-end-label">Previous work</span><strong>Financial Adventure</strong></span></a><a class="case-end-link case-end-link-next" href="../interactive-exhibits/"><span class="case-end-copy"><span class="case-end-label">Next project</span><strong>Interactive Exhibits</strong></span><b class="case-end-arrow" aria-hidden="true">→</b></a></nav>
     </div>
   </main>
 
   <footer class="site-footer"><div class="footer-primary"><div class="footer-identity"><strong>Alfie Liu</strong><div class="footer-meta"><span>Product Designer · Vancouver © 2026</span><a href="../llms.txt" target="_blank" rel="noopener">A little note for AI</a></div></div><nav class="footer-links" aria-label="Footer links"><a href="../assets/documents/Alfie-Liu-CV.pdf" target="_blank" rel="noopener" aria-label="Resume PDF (opens in a new tab)">Resume</a><a href="https://www.linkedin.com/in/alfiekengliu" target="_blank" rel="noreferrer">LinkedIn</a><a href="mailto:alfie.kengliu@gmail.com">alfie.kengliu@gmail.com</a></nav></div></footer>
-  <nav class="dock" aria-label="Primary navigation"><a class="dock-item active" href="../#work">Work</a><a class="dock-item" href="../about/">About</a><a class="dock-item" href="../assets/documents/Alfie-Liu-CV.pdf" target="_blank" rel="noopener" aria-label="Resume PDF (opens in a new tab)">Resume</a></nav>
+  <nav class="dock" aria-label="Primary navigation"><a class="dock-item" href="../#work">Work</a><a class="dock-item" href="../about/">About</a><a class="dock-item" href="../assets/documents/Alfie-Liu-CV.pdf" target="_blank" rel="noopener" aria-label="Resume PDF (opens in a new tab)">Resume</a></nav>
   
 </body>
 </html>

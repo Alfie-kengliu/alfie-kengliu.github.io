@@ -211,7 +211,7 @@ document.querySelectorAll('[data-loop-video]').forEach((video) => {
     updateToggle();
   };
 
-  toggle?.addEventListener('click', () => {
+  const togglePlayback = () => {
     if (video.paused) {
       userPaused = false;
       play();
@@ -219,7 +219,9 @@ document.querySelectorAll('[data-loop-video]').forEach((video) => {
       userPaused = true;
       pause();
     }
-  });
+  };
+  toggle?.addEventListener('click', togglePlayback);
+  video.addEventListener('click', togglePlayback);
 
   video.addEventListener('play', updateToggle);
   video.addEventListener('pause', updateToggle);
@@ -395,12 +397,10 @@ if (aboutPhotos.length) {
     photo.addEventListener('pointermove', (event) => {
       if (!finePointer.matches || motionPreference.matches || !caption) return;
       const bounds = photo.getBoundingClientRect();
-      const maxX = Math.max(0, bounds.width - caption.offsetWidth - 18);
-      const maxY = Math.max(0, bounds.height - caption.offsetHeight - 18);
-      const x = Math.min(Math.max(0, event.clientX - bounds.left), maxX);
-      const y = Math.min(Math.max(0, event.clientY - bounds.top), maxY);
-      photo.style.setProperty('--photo-caption-x', `${x}px`);
-      photo.style.setProperty('--photo-caption-y', `${y}px`);
+      const viewportX = Math.max(12, Math.min(event.clientX + 12, window.innerWidth - caption.offsetWidth - 12));
+      const viewportY = Math.max(12, Math.min(event.clientY + 12, window.innerHeight - caption.offsetHeight - 12));
+      photo.style.setProperty('--photo-caption-x', `${viewportX - bounds.left}px`);
+      photo.style.setProperty('--photo-caption-y', `${viewportY - bounds.top}px`);
     });
     photo.addEventListener('pointerleave', () => photo.classList.remove('is-pointer-active'));
   });
