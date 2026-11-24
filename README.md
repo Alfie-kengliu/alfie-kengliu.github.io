@@ -12,6 +12,10 @@ Edit website copy directly in the relevant HTML file under `dist/`, then check i
 - Financial Adventure uses supplied images and six videos. The feedback questionnaire remains a placeholder; one reflection image and one unclassified video remain unmapped. Interactive Exhibits uses two side-by-side hero loops, one Cube N story animation, and a 2×2 motor interaction grid with two images and two animations. These videos play silently without controls only while sufficiently visible; reduced-motion visitors receive static posters.
 - The Resume links open the supplied PDF in a new tab.
 
+### Updating the website CV
+
+The public CV is `dist/assets/documents/Alfie-Liu-CV.pdf`. Every replacement must have the PDF document **Title** metadata set to exactly `ALFIE LIU CV` (including capitalization), so the opened PDF shows that name regardless of its source filename. After replacing it, verify the metadata locally (for example, with `pdfinfo`), open a website Resume link and check the displayed PDF title, and refresh the PDF URL version query on all Resume links so visitors receive the new file. After an authorized deployment, repeat the title check on the public website.
+
 ## Local preview
 
 From this repository's root, run `python3 -m http.server 4180 --bind 127.0.0.1 --directory dist`, then open `http://127.0.0.1:4180/`.
